@@ -2,9 +2,11 @@ FROM node:10-alpine
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
-EXPOSE 3000
+EXPOSE 1337
 
 WORKDIR /home/node/app
+
+RUN apk add curl
 
 COPY package*.json ./
 
