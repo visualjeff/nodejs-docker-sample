@@ -1,29 +1,29 @@
-##Nodejs Docker Sample
+## Nodejs Docker Sample
 
 Nodejs / Hapi web app (within a docker support).  NOTE: The server internally uses the host: 0.0.0.0 and not localhost.  
 
-###Prerequites:
+### Prerequites:
 ```
 Node.js v10
 ```
 
-###To setup:
+### To setup:
 ```
 npm install
 ```
 
-###To run:
+### To run:
 ```
 node server.js
 ```
 
-##To validate the app is running visit the urls listed below with your browser:
+### To validate the app is running visit the urls listed below with your browser:
 ```
 http://localhost:1337/
 http://localhost:1337/<<YOUR_NAME>>
 ```
 
-###Docker commands below if you have docker or docker-compose installed:
+### Docker commands below if you have docker or docker-compose installed:
 
 Using your local repo:
 ```
