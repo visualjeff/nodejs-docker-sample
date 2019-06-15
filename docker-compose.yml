@@ -1,0 +1,20 @@
+# Install docker-compose using pip on Linux.
+# https://docs.docker.com/compose/install/
+
+# DOCKER-COMPOSE CLI COMMANDS:
+#   build:       docker-compose build
+#   run:         docker-compose up -d
+#   logs:        docker-compose logs -f
+#   shell into:  docker-compose exec nodejs-docker-sample sh
+#   stop:        docker-compose stop
+
+version: "2.4"
+services:
+  nodejs-docker-sample:
+    build: .
+    image: nodejs-docker-sample:1.0.0
+    container_name: nodejs-docker-sample
+    command: ["node", "server.js"]
+    ports:
+      - "1337:1337"
+
