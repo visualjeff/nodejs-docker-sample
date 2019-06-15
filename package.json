@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/visualjeff/nodejs-docker-sample.git"
-  },  
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
