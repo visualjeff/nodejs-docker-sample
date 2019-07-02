@@ -21,7 +21,7 @@ server.route({
     path: '/{name}',
     handler: (request, h) => {
 
-        return 'Hello, ' + encodeURIComponent(request.params.name) + '!';
+        return 'Hello, ' + decodeURIComponent(request.params.name) + '!';
     }
 });
 
